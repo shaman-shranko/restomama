@@ -1,0 +1,87 @@
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    padding: 0;
+    .row{
+        width: 100%;
+    }
+    .brand-logo{
+        position: relative;
+        display: flex;
+        align-items: center;
+        img{
+            height: 45px;
+        }
+    }
+    .sidenav-trigger{
+        margin-right: 0;
+    }
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    a{
+        display: flex;
+        align-items: center;
+        >i{
+            display: inline-block;
+        }
+    }
+    li{
+        i.material-icons{
+            font-size: 1.5em;
+        }
+    }
+    .btn{
+        text-transform: capitalize;
+    }
+}
+.lang-toggle{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+#lang-list{
+    a{
+        text-transform: uppercase;
+    }
+}
+.dropdown-content li > a, .dropdown-content li > span{
+    display: flex;
+}
+.dropdown-content li > a > i{
+    margin-right: 10px;
+}
+.account-block{
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
+}
+@media only screen and (max-width: 992px){
+    nav .brand-logo {
+        left: unset;
+        transform: none;
+    }
+}
+@media only screen and (min-width: 601px){
+    .navbar-fixed {
+        height: 80px;
+    }
+    nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+        height: 80px;
+        line-height: 80px;
+    }
+    nav .brand-logo img {
+        height: 55px;
+    }
+}

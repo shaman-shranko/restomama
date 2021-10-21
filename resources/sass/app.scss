@@ -1,0 +1,23 @@
+// Fonts
+//@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Materialize
+@import '~materialize-css/sass/materialize';
+
+// JQuery UI
+@import "components/jquery-ui";
+
+//components
+@import "components/general";
+@import "components/typography";
+@import "components/header";
+@import "components/footer";
+@import "components/sliders";
+@import "components/search_form";
+@import "components/breadcrumbs";
+@import "components/product_card";
+@import "components/pagination";
+@import "components/catalog";

@@ -1,0 +1,41 @@
+.heading{
+    font-family: $font-family-serif;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 63px;
+    color: $text-color;
+}
+.heading-1{
+    font-family: $font-family-sans-serif;
+    font-weight: bold;
+    margin: 0;
+    font-size: 40px;
+    line-height: 47px;
+    color: $primary-color;
+}
+.heading-2{
+    font-family: $font-family-serif;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 63px;
+    color: $text-color;
+}
+.heading-3{
+    font-family: $font-family-sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: $primary-color;
+    line-height: 28px;
+    margin: 5px 0 10px;
+}
+@media screen and (max-width: 762px){
+    .heading-1{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .heading-2{
+        font-size: 24px;
+        line-height: 28px;
+        //font-weight: 400;
+    }
+}

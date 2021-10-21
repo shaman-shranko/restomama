@@ -1,0 +1,21 @@
+.searchForm{
+    padding-top: 35px;
+    padding-bottom: 35px;
+    .material-icons{
+        color: $secondary-color;
+    }
+    .btn{
+        width: 100%;
+        border-radius: 0;
+        height: 45px;
+        box-shadow: unset;
+    }
+}
+.searchForm__title{
+    font-family: $font-family-sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+    text-transform: uppercase;
+    color: $primary-color;
+}

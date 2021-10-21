@@ -1,0 +1,107 @@
+.slick-slider{
+    .prev-arrow{
+        position: absolute;
+        top: calc(50% - 20px);
+        left: 15px;
+        color: #ffffff;
+        background: transparent;
+        border: none;
+        z-index: 20;
+        cursor: pointer;
+        .material-icons{
+            font-size: 40px;
+        }
+    }
+    .next-arrow{
+        position: absolute;
+        top: calc(50% - 20px);
+        right: 15px;
+        color: #ffffff;
+        background: transparent;
+        border: none;
+        z-index: 20;
+        cursor: pointer;
+        .material-icons{
+            font-size: 40px;
+        }
+    }
+    .slick-slide{
+        &:focus{
+            outline: none;
+        }
+        &:hover{
+            cursor: grab;
+        }
+    }
+    .slick-dots{
+        position: absolute;
+        right: 100px;
+        bottom: 50px;
+        display: flex;
+        button{
+            color: transparent;
+            background: #ffffff;
+            border: 1px solid #555555;
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            font-size: 4px;
+            overflow: hidden;
+            margin: 0 5px;
+            display: block;
+            cursor: pointer;
+            padding: 0;
+        }
+        .slick-active{
+            button{
+                background: #555555;
+            }
+        }
+    }
+}
+.slick-slide{
+    position: relative;
+}
+.productSlider__item{
+    img{
+        width: 100%;
+    }
+}
+.productStartScreen{
+    position: relative;
+}
+.slider_card{
+    background: rgba(255,255,255,0.8);
+    box-shadow: $shadow;
+}
+.productStartScreen__card{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 40px 15px 40px 60px;
+}
+.homeSlider__item{
+    img{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 762px){
+    .slick-slider{
+        .slick-dots{
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .slick-slide{
+            overflow: hidden;
+            img{
+                width: 192%;
+                height: 80vw;
+                transform: translateX(-30%);
+                max-width: unset;
+            }
+        }
+    }
+}

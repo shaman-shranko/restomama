@@ -1,0 +1,14 @@
+.breadcrumbs{
+    a{
+        font-family: $font-family-sans-serif;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        color: $text-color;
+        text-transform: uppercase;
+    }
+    li{
+        list-style: none;
+        display: inline-block;
+    }
+}
